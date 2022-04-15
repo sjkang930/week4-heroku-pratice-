@@ -2,7 +2,7 @@ const database = include('/databaseConnection');
 
 
 function getAllTodos(callback) {
-	let sqlQuery = "SELECT * FROM todo";
+	let sqlQuery = "SELECT * FROM lab.todo;";
 	database.query(sqlQuery, (err, results, fields) => {
 		if (err) {
 			callback(err, null);
